@@ -1,13 +1,15 @@
 require_relative "arrays"
 require_relative "symbols_hashes"
 
-cart = Cart.new
+item1 = Item.new({:price => 10, :weight => 100, :name => "Car"})
+item2 = Item.new({ :weight => 100, :name => "Car"})
 
-cart.add_item(Item.new)
-cart.add_item(Item.new)
+cart = Cart.new
+cart.add_item item1
+cart.add_item item2
 
 p cart.items
 
-cart.remove_item
+cart.delete_invalid_items
 
 p cart.items
