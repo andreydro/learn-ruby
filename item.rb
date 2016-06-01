@@ -13,6 +13,7 @@ class Item
   def initialize(options = {})
     @real_price = options[:price]
     @name = options[:name]
+    @weight = options[:weight]
   end
 
   attr_reader :real_price, :name, :weight
