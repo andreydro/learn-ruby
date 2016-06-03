@@ -18,5 +18,6 @@ cart = Cart.new("roman")
 cart.add_item RealItem.new({ :weight => 100, :price => 101, :name => "car"})
 cart.add_item RealItem.new({ :weight => 100, :price => 150, :name => "car"})
 cart.add_item RealItem.new({ :weight => 100, :price => 120, :name => "kettle"})
-p cart.all_cars
-p cart.all_kettles
+
+method = "all_cars"
+p cart.send(method)
