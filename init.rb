@@ -12,6 +12,13 @@ StoreApplication.config do |app|
 
 end
 
+unless StoreApplication.frozen?
+  StoreApplication.name = "My name"
+end
+#StoreApplication::Admin.email = "new@email.com"
+puts StoreApplication::Admin.email
+
+
 p StoreApplication.environment
 p StoreApplication.name
 p StoreApplication::Admin.email
