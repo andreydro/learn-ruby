@@ -19,7 +19,10 @@ describe ItemContainer do
     @box =  ItemBox.new
     @item1 = Item.new("kettle", price: 200)
     @item2 = Item.new("kettle", price: 300)
+  end
 
+  it "shows min price for the item" do
+    ItemBox.min_price.should be(100)
   end
 
   it "adds items into the container" do

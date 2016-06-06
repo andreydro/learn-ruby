@@ -11,6 +11,7 @@ class Order
 
   def place
     @placed_at = Time.now
+    # "mock" for testing Pony
     thr = Thread.new do
       Pony.mail(:to => StoreApplication::Admin.email,
         :from => "My store <jason.binwood@gmail.com>",
