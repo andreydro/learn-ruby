@@ -12,8 +12,8 @@ describe RealItem do
     item2_info = []
     item1.info { |attr| item1_info << attr}
     item2.info { |attr| item2_info << attr}
-    p item1_info.join(",  ").should == "232.0, kettle"
-    p item2_info.join(",  ").should == "10, 232.0, kettle"
+    p item1_info.join(", ").should == "222.0, kettle"
+    p item2_info.join(", ").should == "10, 222.0, kettle"
   end
 
 end

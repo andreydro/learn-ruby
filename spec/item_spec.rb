@@ -16,12 +16,12 @@ describe Item do
   after(:all) {}
 
   it "calculates price according to a special formula" do
-    @item.price.should == 232
+    @item.price.should == 222
     @item.price = 300
   end
 
   it "returns info about an object" do
-    @item.to_s.should == "kettle:232.0"
+    @item.to_s.should == "kettle:222.0"
   end
 
   it "calculates tax" do
