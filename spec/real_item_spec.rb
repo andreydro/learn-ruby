@@ -3,7 +3,7 @@ require_relative "../app/item"
 require_relative "../app/virtual_item"
 require_relative "../app/real_item"
 
-descrive RealItem do
+describe RealItem do
 
   it "uses weight while returning info if the condition is true" do
     item1 = RealItem.new(name: "kettle", price: 200, weight: 2)

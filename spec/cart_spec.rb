@@ -1,6 +1,6 @@
 require "rspec"
 require_relative "../app/item"
-require_relative "../app/viratual_item"
+require_relative "../app/virtual_item"
 require_relative "../app/antique_item"
 require_relative "../app/item_container"
 require_relative "../app/cart"

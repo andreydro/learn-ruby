@@ -1,6 +1,7 @@
 require_relative "app/store_application"
 
 StoreApplication.config do |app|
+
   app.name           = "My Store"
   app.environment = :production
 
